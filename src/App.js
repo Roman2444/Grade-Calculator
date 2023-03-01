@@ -2,7 +2,6 @@ import "./App.css";
 
 import React from "react";
 
-
 function App() {
   const [count5, setCount5] = React.useState(0);
   const [count4, setCount4] = React.useState(0);
@@ -50,74 +49,72 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="section">
-          <p>
-            количество <br /> 5
-          </p>
-          <div className="button_wrapper">
-            <button onClick={() => setCount5(+count5 + 1)}> + </button>
-            <input
-              onChange={(e) => setCount5(+e.target.value)}
-              value={count5}
-            />
-            <button onClick={() => setCount5(+count5 - 1)}> - </button>
+        <div className="wrapper_sections">
+          <div className="section">
+            <p>
+              количество <br /> 5
+            </p>
+            <div className="button_wrapper">
+              <button onClick={() => setCount5(+count5 + 1)}> + </button>
+              <input
+                onChange={(e) => setCount5(+e.target.value)}
+                value={count5}
+              />
+              <button onClick={() => setCount5(+count5 - 1)}> - </button>
+            </div>
           </div>
-        </div>
-        <div className="section">
-          <p>
-            количество <br /> 4
-          </p>
-          <div className="button_wrapper">
-            <button onClick={() => setCount4(+count4 + 1)}> + </button>
-            <input
-              onChange={(e) => setCount4(+e.target.value)}
-              value={count4}
-            />
-            <button onClick={() => setCount4(+count4 - 1)}> - </button>
+          <div className="section">
+            <p>
+              количество <br /> 4
+            </p>
+            <div className="button_wrapper">
+              <button onClick={() => setCount4(+count4 + 1)}> + </button>
+              <input
+                onChange={(e) => setCount4(+e.target.value)}
+                value={count4}
+              />
+              <button onClick={() => setCount4(+count4 - 1)}> - </button>
+            </div>
           </div>
-        </div>
-        <div className="section">
-          <p>
-            количество <br /> 3
-          </p>
-          <div className="button_wrapper">
-            <button onClick={() => setCount3(+count3 + 1)}> + </button>
-            <input
-              onChange={(e) => setCount3(+e.target.value)}
-              value={count3}
-            />
-            <button onClick={() => setCount3(+count3 - 1)}> - </button>
+          <div className="section">
+            <p>
+              количество <br /> 3
+            </p>
+            <div className="button_wrapper">
+              <button onClick={() => setCount3(+count3 + 1)}> + </button>
+              <input
+                onChange={(e) => setCount3(+e.target.value)}
+                value={count3}
+              />
+              <button onClick={() => setCount3(+count3 - 1)}> - </button>
+            </div>
           </div>
-        </div>
-        <div className="section">
-          <p>
-            количество <br /> 2
-          </p>
-          <div className="button_wrapper">
-            <button onClick={() => setCount2(+count2 + 1)}> + </button>
-            <input
-              onChange={(e) => setCount2(+e.target.value)}
-              value={count2}
-            />
-            <button onClick={() => setCount2(+count2 - 1)}> - </button>
+          <div className="section">
+            <p>
+              количество <br /> 2
+            </p>
+            <div className="button_wrapper">
+              <button onClick={() => setCount2(+count2 + 1)}> + </button>
+              <input
+                onChange={(e) => setCount2(+e.target.value)}
+                value={count2}
+              />
+              <button onClick={() => setCount2(+count2 - 1)}> - </button>
+            </div>
           </div>
-        </div>
-        <div className="button__wrapper">
-          
         </div>
 
+        <button className="button_reset" onClick={() => clearInput()}>
+          сбросить все
+        </button>
 
+        <h2>средний балл {middle}</h2>
+        <h3>
+          {middle >= 4.6
+            ? "Поздравляю, выходит итоговая 5!"
+            : `...ну зачем тебе натянутая пятерка`}
+        </h3>
       </div>
-      <button className="button_reset" onClick={() => clearInput()}>
-        сбросить все
-      </button>
-
-      <h2>средний балл {middle}</h2>
-      <h3>
-        {middle >= 4.6
-          ? "Поздравляю, выходит итоговая 5!"
-          : `...ну зачем тебе натянутая пятерка`}
-      </h3>
     </div>
   );
 }
