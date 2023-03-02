@@ -3,20 +3,26 @@
   text-align: center;
 }
 
-button {
-  cursor: pointer;
+input {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+
+  font-size: 20px;
 }
+
 
 .button {
   height: 30px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .container {
   max-width: 500px;
   margin: 10px auto 0 ;
   border: 1px solid green;
-  padding: 0px;
+  padding: 5px;
 }
 
 .wrapper_sections {
@@ -41,6 +47,10 @@ button {
   height: 40px;
   border-radius: 10px;
   background-color: cadetblue;
+  font-size: 16px;
+  font-weight: 600;
+
+
 }
 
 input {
