@@ -7,21 +7,27 @@ button {
   cursor: pointer;
 }
 
+.button {
+  height: 30px;
+  border-radius: 10px;
+}
+
 .container {
   max-width: 500px;
   margin: 10px auto 0 ;
   border: 1px solid green;
-  padding: 10px;
+  padding: 0px;
 }
 
 .wrapper_sections {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: centser;
   justify-content: center;
 }
 .section {
-  width: 100px;
+  max-width: 100px;
 }
 
 .button_wrapper {
@@ -32,8 +38,8 @@ button {
 .button_reset {
   margin-top: 20px;
   width: 300px;
-  height: 30px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 10px;
   background-color: cadetblue;
 }
 

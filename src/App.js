@@ -55,12 +55,12 @@ function App() {
               количество <br /> 5
             </p>
             <div className="button_wrapper">
-              <button onClick={() => setCount5(+count5 + 1)}> + </button>
+              <button className="button" onClick={() => setCount5(+count5 + 1)}> + </button>
               <input
                 onChange={(e) => setCount5(+e.target.value)}
                 value={count5}
               />
-              <button onClick={() => setCount5(+count5 - 1)}> - </button>
+              <button className="button" onClick={() => setCount5(+count5 - 1)}> - </button>
             </div>
           </div>
           <div className="section">
@@ -68,12 +68,12 @@ function App() {
               количество <br /> 4
             </p>
             <div className="button_wrapper">
-              <button onClick={() => setCount4(+count4 + 1)}> + </button>
+              <button className="button" onClick={() => setCount4(+count4 + 1)}> + </button>
               <input
                 onChange={(e) => setCount4(+e.target.value)}
                 value={count4}
               />
-              <button onClick={() => setCount4(+count4 - 1)}> - </button>
+              <button className="button" onClick={() => setCount4(+count4 - 1)}> - </button>
             </div>
           </div>
           <div className="section">
@@ -81,12 +81,12 @@ function App() {
               количество <br /> 3
             </p>
             <div className="button_wrapper">
-              <button onClick={() => setCount3(+count3 + 1)}> + </button>
+              <button className="button" onClick={() => setCount3(+count3 + 1)}> + </button>
               <input
                 onChange={(e) => setCount3(+e.target.value)}
                 value={count3}
               />
-              <button onClick={() => setCount3(+count3 - 1)}> - </button>
+              <button className="button" onClick={() => setCount3(+count3 - 1)}> - </button>
             </div>
           </div>
           <div className="section">
@@ -94,12 +94,12 @@ function App() {
               количество <br /> 2
             </p>
             <div className="button_wrapper">
-              <button onClick={() => setCount2(+count2 + 1)}> + </button>
+              <button className="button" onClick={() => setCount2(+count2 + 1)}> + </button>
               <input
                 onChange={(e) => setCount2(+e.target.value)}
                 value={count2}
               />
-              <button onClick={() => setCount2(+count2 - 1)}> - </button>
+              <button className="button" onClick={() => setCount2(+count2 - 1)}> - </button>
             </div>
           </div>
         </div>
