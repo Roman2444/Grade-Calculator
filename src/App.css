@@ -1,29 +1,52 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: 10px auto 0 ;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(236, 240, 241);
 }
 
 input {
   outline: none;
   border: none;
   border: solid 1px #f2f2f2;
+  text-align: center;
 
   font-size: 20px;
   font-weight: 700;
+  background-color: rgb(236, 240, 241);
 }
 
 .button {
+  margin: 0px 0 5px;
   height: 30px;
   border-radius: 10px;
   cursor: pointer;
+  border: 0;
+  outline: none;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(211, 227, 228);
+  z-index: 2;
 }
 
-.container {
-  max-width: 500px;
-  margin: 10px auto 0 ;
-  border: 1px solid green;
-  padding: 5px;
+.button:hover {
+  background-color: rgb(147, 197, 199);
 }
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+
 
 .wrapper_sections {
   display: flex;
@@ -49,10 +72,10 @@ input {
   background-color: cadetblue;
   font-size: 16px;
   font-weight: 600;
-
-
 }
 
-input {
-  text-align: center;
+.button_reset:hover {
+  background-color: rgb(147, 197, 199);
 }
+
+
